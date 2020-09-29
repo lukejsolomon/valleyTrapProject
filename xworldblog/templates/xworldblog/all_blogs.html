@@ -1,0 +1,22 @@
+{% extends 'xworldblog/navBarFooter.html' %}
+{% block content %}
+
+
+
+<div class="row">
+    {% for blog in blogs %}
+    <div class="col-lg-4 col-md-6">
+        <a href="{% url 'pageOne' blog.id %}">
+            <img class="imgBlog" src="{{ blog.summaryImage.url }}">
+
+            <h2 class="blogTitleText">{{ blog.title }}</h2>
+        </a>
+
+
+    </div>
+
+    {% endfor %}
+</div>
+
+
+{% endblock %}

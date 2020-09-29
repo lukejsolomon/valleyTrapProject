@@ -1,0 +1,27 @@
+{% extends 'xworldblog/navBarFooter.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-4">
+            <!-- **************************** -->
+            <img class="imgBlog" src="{{ blog.pageOneImage.url }}">
+        </div>
+
+    </div>
+
+    <div class="row">
+        <!-- **************************** -->
+        <h2 class="blogText">{{ blog.pageOneTitle | safe }}</h2>
+        <p class="blogText">{{ blog.pageOne | safe }}</p>
+    </div>
+</div>
+<div style="margin-left: 5%;" class="col-sm-4">
+    <!-- **************************** -->
+    <a href="{% url 'all_blogs' %}">
+        <button class="backButton">Back</button>
+    </a>
+</div>
+<br>
+{% endblock %}

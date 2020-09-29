@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<!-- **********NAVBAR**************************** -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'xworldblog/xworld.css' %}">
+
+    <script data-ad-client="ca-pub-1254007956873968" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <title>shootvalley.com</title>
+
+</head>
+<!-- <img class="adCenter" src="{% static 'xworldblog\an9.png' %}"> -->
+
+<body>
+    <nav class=" navbar navbar-expand-sm navbar-dark justify-content-between">
+        <a class="navbar-brand" href="{% url 'all_blogs' %}">
+            <img class="adCenter" src="{% static 'xworldblog\vtLogo.png' %}" alt="logo" style="width:250px;"></a>
+
+
+
+        <h3 class="blogTitleText">Welcome to the Valley Trap Range/Fremont Isaac Walton League</h3>
+        <!-- 
+        <img class="adCenter" src="{% static 'xworldblog\an9.png' %}" alt="logo" style="width:250px;"> -->
+
+    </nav>
+    <!-- **********END NAVBAR**************************** -->
+    {% block content %}{% endblock %}
+    <!-- **********FOOTER**************************** -->
+
+    <div class="footer">
+        <div class="row">
+
+
+            <p class="footTextLeft">Welcome to the Valley Trap Range/Fremont Isaac Walton League. One of the premier
+                trap ranges in the midwest, the club features eight traps and a practice trap, great backgrounds, good
+                targets, friendly people and a nice clubhouse. The range also has one of the largest high school teams
+                in Nebraska with about 100 junior high and high school shooters on the Fremont team.
+            </p>
+            <p class="footTextRight"> Mike and Cindy are no longer taking care of the range. Please contact Terry at:
+                <br><br>
+                leadminer@tvsonline.net
+                <br><br>
+                402-720-6347
+                <br><br>
+                for any issues involving the range.
+            </p>
+        </div>
+    </div>
+    <!-- **********END FOOTER**************************** -->
+</body>
+
+</html>
